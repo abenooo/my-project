@@ -14,19 +14,19 @@ const BookTrip = () => {
               title: "Choose Destination",
               description:
                 "Discover vibrant cultures and breathtaking landscapes as you choose your next adventure.",
-              icon: "/src/assets/choose_destination.png",
+              icon: "/assets/choose_destination.png",
             },
             {
               title: "Make Payment",
               description:
                 "Select your package, choose payment, and confirm. Fast and secure.",
-              icon: "/src/assets/make_payment.png",
+              icon: "/assets/make_payment.png",
             },
             {
               title: "Reach Airport on Selected Date",
               description:
                 "Arrive at the airport on your selected date and get ready to embark on your journey.",
-              icon: "/src/assets/reach_airport.png",
+              icon: "/assets/reach_airport.png",
             },
           ].map((step, index) => (
             <li key={index} className="flex">
@@ -48,7 +48,7 @@ const BookTrip = () => {
       </div>
       <div className="bg-white rounded-lg shadow-md overflow-hidden mt-6 md:mt-0 md:w-96">
         <img
-          src="/src/assets/about.jpg"
+          src="/assets/about.jpg"
           alt="Trip to Ethiopia"
           className="w-full h-48 object-cover"
         />

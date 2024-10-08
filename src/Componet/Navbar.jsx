@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +19,7 @@ const Navbar = () => {
         {/* Logo and Site Name */}
         <div className="flex items-center">
           <img
-            src={logo}
+            src="/assets/Image.png"
             alt="Ethiopia logo"
             width={70}
             height={70}

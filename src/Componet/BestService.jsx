@@ -8,10 +8,10 @@ const BestService = () => {
     </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {[
-        { name: "Calculated Weather", icon: "/src/assets/group1.png" },
-        { name: "Best Flights", icon: "/src/assets/group2.png" },
-        { name: "Local Events", icon: "/src/assets/group3.png" },
-        { name: "Customization", icon: "/src/assets/group4.png" },
+        { name: "Calculated Weather", icon: "/assets/Group1.png" },
+        { name: "Best Flights", icon: "/assets/Group2.png" },
+        { name: "Local Events", icon: "/assets/Group3.png" },
+        { name: "Customization", icon: "/assets/Group4.png" },
       ].map((service, index) => (
         <div
           key={index}

@@ -1,5 +1,4 @@
 import { BiPlayCircle } from "react-icons/bi";
-import banner from "../assets/Image.png";
 import { useState } from "react";
 import BestService from "./BestService";
 import { FiArrowLeftCircle } from "react-icons/fi";
@@ -54,7 +53,6 @@ export default function Home() {
   };
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* <Navbar/> */}
 
       <main>
         <section className="flex flex-col lg:flex-row items-center justify-between py-12">
@@ -82,7 +80,8 @@ export default function Home() {
           </div>
           <div className="relative w-full max-w-md mx-auto mt-6 lg:mt-0 lg:max-w-none">
             <img
-              src={banner}
+              // src="/assets/banner.png"
+              src="/assets/Image.png"
               alt="Traveler"
               className="w-full h-auto object-cover"
             />
@@ -108,7 +107,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               <div className="flex items-start mb-4">
                 <img
-                  src="/src/assets/download.jpeg"
+                  src="/assets/download.jpeg"
                   alt={testimonials[currentTestimonial].name}
                   width={48}
                   height={48}
@@ -128,11 +127,11 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-center mt-4">
                 <FiArrowLeftCircle
-                  className="text-blue-600 cursor-pointer text-3xl"
+                  className="text-orange-500 cursor-pointer text-3xl"
                   onClick={prevTestimonial}
                 />
                 <FiArrowRightCircle
-                  className="text-blue-600 cursor-pointer text-3xl"
+                  className="text-orange-500 cursor-pointer text-3xl"
                   onClick={nextTestimonial}
                 />
               </div>
