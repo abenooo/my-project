@@ -56,17 +56,17 @@ export default function Home() {
       {/* <Navbar/> */}
 
       <main>
-        <section className="flex items-center justify-between py-12">
-          <div className="max-w-xl">
-            <h1 className="text-5xl font-bold text-navy-900 leading-tight mb-4">
-              Travel, experience and live in Ethiopia visit us today!
+        <section className="flex flex-col lg:flex-row items-center justify-between py-12">
+          <div className="max-w-xl w-full px-4 lg:px-0">
+            <h1 className="text-2xl lg:text-5xl font-bold text-navy-900 leading-tight mb-4">
+              Travel, experience, and live in Ethiopia visit us today!
             </h1>
             <p className="text-gray-600 mb-6">
               Ethiopia invites you to discover why it is the origin of so much!
               As you explore Ethiopia, you will be put in touch with your own
               origins...for this is a Land of Origins
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap gap-4">
               <button
                 className="bg-orange-400 text-white px-6 py-3 rounded-full font-semibold"
                 onClick={handleReadMoreClick}
@@ -74,13 +74,17 @@ export default function Home() {
                 Read More
               </button>
               <button className="flex items-center">
-                <BiPlayCircle className="mr-2 h-12 w-12  text-orange-500" /> Play
+                <BiPlayCircle className="mr-2 h-12 w-12 text-orange-500" /> Play
                 Demo
               </button>
             </div>
           </div>
-          <div className="relative">
-            <img src={banner} alt="Traveler" width={500} height={500} />
+          <div className="relative w-full max-w-md mx-auto mt-6 lg:mt-0 lg:max-w-none">
+            <img
+              src={banner}
+              alt="Traveler"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
@@ -293,11 +297,7 @@ export default function Home() {
                 </button>
               </form>
             </div>
-            <div className="absolute bottom-0 right-0">
-              {/* <Send className="text-purple-300 w-12 h-12" /> */}
-            </div>
           </section>
-
         </div>
       </main>
     </div>
