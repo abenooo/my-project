@@ -93,10 +93,10 @@ export default function LandingPage() {
         <section className="py-12 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/src/assets/About.png"
+              src="/src/assets/tour.jpeg"
               alt="Travel stamp"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="rounded-full"
             />
           </div>
@@ -177,11 +177,11 @@ export default function LandingPage() {
             </div>
             <div className="md:w-1/2">
               <img
-                src="/src/assets/About.png"
+                src="/src/assets/4kilo.jpg"
                 alt="Europe sightseeing"
-                width={400}
-                height={400}
-                className="rounded-full"
+                width={500}
+                height={500}
+              className="rounded-full"
               />
             </div>
           </div>
