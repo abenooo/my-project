@@ -17,9 +17,9 @@ export default function LandingPage() {
       {/* <Navbar/> */}
 
       <main>
-        <section className="flex items-center justify-between py-12">
-          <div className="max-w-xl">
-            <h1 className="text-5xl font-bold text-navy-900 leading-tight mb-4">
+        <section className="flex flex-col lg:flex-row items-center justify-between py-12">
+          <div className="max-w-xl w-full px-4 lg:px-0">
+            <h1 className="text-2xl lg:text-5xl font-bold text-navy-900 leading-tight mb-4">
               Welcome to Ethiopia, Land of Origins
             </h1>
             <p className="text-gray-600 mb-6">
@@ -30,7 +30,7 @@ export default function LandingPage() {
               fourth-holiest Islamic city, along with the oldest continuously
               occupied town south of the Sahara.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex flex-wrap gap-4">
               <button
                 onClick={handleReadMoreClick}
                 className="bg-orange-400 text-white px-6 py-3 rounded-full font-semibold"
@@ -39,8 +39,12 @@ export default function LandingPage() {
               </button>
             </div>
           </div>
-          <div className="relative">
-            <img src={banner} alt="Traveler" width={500} height={500} />
+          <div className="relative w-full max-w-md mx-auto mt-6 lg:mt-0 lg:max-w-none">
+            <img
+              src={banner}
+              alt="Traveler"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 
@@ -174,7 +178,7 @@ export default function LandingPage() {
             </div>
             <div className="md:w-1/2">
               <img
-                src='/src/assets/About.png'
+                src="/src/assets/About.png"
                 alt="Europe sightseeing"
                 width={400}
                 height={400}
@@ -185,47 +189,74 @@ export default function LandingPage() {
         </section>
 
         <section className="py-12">
-  <h2 className="text-3xl font-bold mb-8 text-center">
-    Explore Ethiopia with Our Packages
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {[
-      { name: "Addis Ababa", price: "$650", image: "/src/assets/Addis_Ababa.jpeg" },
-      { name: "Lalibela", price: "$720", image: "/src/assets/lalibela.jpeg" },
-      { name: "Gondar", price: "$680", image: "/src/assets/gonder.jpeg" },
-      { name: "Simien Mountains", price: "$820", image: "/src/assets/simien_mountain.jpeg" },
-      { name: "Axum", price: "$750", image: "/src/assets/axum.jpeg" },
-      { name: "Harar", price: "$690", image: "/src/assets/harar.jpeg" },
-      { name: "Lake Tana", price: "$770", image: "/src/assets/lake_tana.jpeg" },
-      { name: "Bale Mountains", price: "$850", image: "/src/assets/bale_mountain.jpeg" },
-      { name: "Omo Valley", price: "$900", image: "/src/assets/omo_vally.jpeg" },
-    ].map((destination, index) => (
-      <div
-        key={index}
-        className="relative group overflow-hidden rounded-lg"
-      >
-        <img
-          src={destination.image}
-          alt={destination.name}
-          width={400}
-          height={300}
-          className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-end p-4">
-          <div>
-            <h3 className="text-white text-xl font-semibold">
-              {destination.name}
-            </h3>
-            <p className="text-orange-500 font-bold">
-              {destination.price}
-            </p>
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Explore Ethiopia with Our Packages
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Addis Ababa",
+                price: "$650",
+                image: "/src/assets/Addis_Ababa.jpeg",
+              },
+              {
+                name: "Lalibela",
+                price: "$720",
+                image: "/src/assets/lalibela.jpeg",
+              },
+              {
+                name: "Gondar",
+                price: "$680",
+                image: "/src/assets/gonder.jpeg",
+              },
+              {
+                name: "Simien Mountains",
+                price: "$820",
+                image: "/src/assets/simien_mountain.jpeg",
+              },
+              { name: "Axum", price: "$750", image: "/src/assets/axum.jpeg" },
+              { name: "Harar", price: "$690", image: "/src/assets/harar.jpeg" },
+              {
+                name: "Lake Tana",
+                price: "$770",
+                image: "/src/assets/lake_tana.jpeg",
+              },
+              {
+                name: "Bale Mountains",
+                price: "$850",
+                image: "/src/assets/bale_mountain.jpeg",
+              },
+              {
+                name: "Omo Valley",
+                price: "$900",
+                image: "/src/assets/omo_vally.jpeg",
+              },
+            ].map((destination, index) => (
+              <div
+                key={index}
+                className="relative group overflow-hidden rounded-lg"
+              >
+                <img
+                  src={destination.image}
+                  alt={destination.name}
+                  width={400}
+                  height={300}
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-end p-4">
+                  <div>
+                    <h3 className="text-white text-xl font-semibold">
+                      {destination.name}
+                    </h3>
+                    <p className="text-orange-500 font-bold">
+                      {destination.price}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
-
+        </section>
       </main>
     </div>
   );
