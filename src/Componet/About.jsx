@@ -14,7 +14,6 @@ export default function LandingPage() {
   };
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* <Navbar/> */}
 
       <main>
         <section className="flex flex-col lg:flex-row items-center justify-between py-12">
