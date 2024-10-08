@@ -4,7 +4,6 @@ import {
   FaLandmark,
   FaPalette,
 } from "react-icons/fa6";
-import banner from "../assets/About.png";
 import { useNavigate } from "react-router-dom";
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -40,7 +39,7 @@ export default function LandingPage() {
           </div>
           <div className="relative w-full max-w-md mx-auto mt-6 lg:mt-0 lg:max-w-none">
             <img
-              src={banner}
+              src="/assets/About.png"
               alt="Traveler"
               className="w-full h-auto object-cover"
             />
@@ -93,7 +92,7 @@ export default function LandingPage() {
         <section className="py-12 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/src/assets/tour.jpeg"
+              src="/assets/tour.jpeg"
               alt="Travel stamp"
               width={500}
               height={500}
@@ -177,7 +176,7 @@ export default function LandingPage() {
             </div>
             <div className="md:w-1/2">
               <img
-                src="/src/assets/4kilo.jpg"
+                src="/assets/4kilo.jpg"
                 alt="Europe sightseeing"
                 width={500}
                 height={500}
@@ -196,39 +195,39 @@ export default function LandingPage() {
               {
                 name: "Addis Ababa",
                 price: "$650",
-                image: "/src/assets/Addis_Ababa.jpeg",
+                image: "/assets/Addis_Ababa.jpeg",
               },
               {
                 name: "Lalibela",
                 price: "$720",
-                image: "/src/assets/lalibela.jpeg",
+                image: "/assets/lalibela.jpeg",
               },
               {
                 name: "Gondar",
                 price: "$680",
-                image: "/src/assets/gonder.jpeg",
+                image: "/assets/gonder.jpeg",
               },
               {
                 name: "Simien Mountains",
                 price: "$820",
-                image: "/src/assets/simien_mountain.jpeg",
+                image: "/assets/simien_mountain.jpeg",
               },
-              { name: "Axum", price: "$750", image: "/src/assets/axum.jpeg" },
-              { name: "Harar", price: "$690", image: "/src/assets/harar.jpeg" },
+              { name: "Axum", price: "$750", image: "/assets/axum.jpeg" },
+              { name: "Harar", price: "$690", image: "/assets/harar.jpeg" },
               {
                 name: "Lake Tana",
                 price: "$770",
-                image: "/src/assets/lake_tana.jpeg",
+                image: "/assets/lake_tana.jpeg",
               },
               {
                 name: "Bale Mountains",
                 price: "$850",
-                image: "/src/assets/bale_mountain.jpeg",
+                image: "/assets/bale_mountain.jpeg",
               },
               {
                 name: "Omo Valley",
                 price: "$900",
-                image: "/src/assets/omo_vally.jpeg",
+                image: "/assets/omo_vally.jpeg",
               },
             ].map((destination, index) => (
               <div
