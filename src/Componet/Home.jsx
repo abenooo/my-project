@@ -5,7 +5,6 @@ import BestService from "./BestService";
 import { FiArrowLeftCircle } from "react-icons/fi";
 import { FiArrowRightCircle } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
-import Footer from "../Componet/Footer";
 
 // import Navbar from "../Componet/Navbar";
 export default function Home() {
@@ -299,7 +298,6 @@ export default function Home() {
             </div>
           </section>
 
-         <Footer />
         </div>
       </main>
     </div>
