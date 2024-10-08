@@ -70,24 +70,6 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link
-            to="/contact"
-            className={`px-4 py-2 rounded-full ${
-              isActive("/contact") ? "bg-orange-400 text-white" : "text-gray-600"
-            }`}
-          >
-            Contact Us
-          </Link>
-          <Link
-            to="/gallery"
-            className={`px-4 py-2 rounded-full ${
-              isActive("/gallery")
-                ? "bg-orange-400 text-white"
-                : "text-gray-600"
-            }`}
-          >
-            Gallery
-          </Link>
         </nav>
       </header>
 
@@ -117,32 +99,6 @@ const Navbar = () => {
                 }`}
               >
                 About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                onClick={toggleMobileMenu}
-                className={`block text-center px-4 py-2 rounded-full ${
-                  isActive("/contact")
-                    ? "bg-orange-400 text-white"
-                    : "text-gray-600"
-                }`}
-              >
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/gallery"
-                onClick={toggleMobileMenu}
-                className={`block text-center px-4 py-2 rounded-full ${
-                  isActive("/gallery")
-                    ? "bg-orange-400 text-white"
-                    : "text-gray-600"
-                }`}
-              >
-                Gallery
               </Link>
             </li>
           </ul>

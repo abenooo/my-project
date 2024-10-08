@@ -1,4 +1,9 @@
-import { FaFaceGrinHearts } from "react-icons/fa6";
+import {
+  FaFaceGrinHearts,
+  FaHandsHolding,
+  FaLandmark,
+  FaPalette,
+} from "react-icons/fa6";
 import banner from "../assets/About.png";
 import { useNavigate } from "react-router-dom";
 export default function LandingPage() {
@@ -52,18 +57,19 @@ export default function LandingPage() {
                   "Built-in travel longer service we deliver efficient and timely travel service",
               },
               {
-                icon: FaFaceGrinHearts,
+                icon: FaHandsHolding,
                 title: "Built on Expertise",
                 description:
                   "Engineered touring that goes well may have been for the best",
               },
               {
-                icon: FaFaceGrinHearts,
+                icon: FaLandmark,
                 title: "Engaged and Dedicated",
-                title: "Broken surely that as with a was as engaged traveling",
+                description:
+                  "Broken surely that as with a was as engaged traveling",
               },
               {
-                icon: FaFaceGrinHearts,
+                icon: FaPalette,
                 title: "Attention to Detail",
                 description:
                   "We deliver customized solution services for industry customers",
@@ -84,7 +90,7 @@ export default function LandingPage() {
         <section className="py-12 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <img
-              src="/placeholder.svg?height=300&width=300"
+              src="/src/assets/About.png"
               alt="Travel stamp"
               width={300}
               height={300}
@@ -94,10 +100,12 @@ export default function LandingPage() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6">Our Popular Tour Plans</h2>
             <p className="text-gray-600 mb-8">
-              Et labore harum non nobis ipsum eum molestias mollitia et corporis
-              praesentium a laudantium internos. Non quis eius quo eligendi
-              corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut
-              ducimus illum aut optio quibusdam!
+              Explore our handpicked tours where every detail is crafted for
+              your enjoyment and comfort. From hidden gems to celebrated
+              attractions, our tours promise unforgettable experiences and
+              premium service. Choose from a variety of options designed to meet
+              your highest expectations, each offering unique adventures and
+              seamless travel arrangements.
             </p>
             <div className="flex space-x-8">
               {[
@@ -148,13 +156,17 @@ export default function LandingPage() {
             <div className="md:w-1/2 mb-8 md:mb-0 px-8">
               <span className="text-orange-500 font-semibold">PROMOTION</span>
               <h2 className="text-3xl font-bold mt-2 mb-4">
-                We Provide You Best Europe Sightseeing Tours
+                We Provide You Best Ethiopian Sightseeing Tours
               </h2>
               <p className="text-gray-600 mb-6">
-                Et labore harum non nobis ipsum eum molestias mollitia et
-                corporis praesentium a laudantium internos. Non quis eius quo
-                eligendi corrupti et fugiat nulla qui soluta recusandae in
-                maxime quasi aut ducimus illum aut optio quibusdam!
+                We offer exceptional sightseeing tours across Ethiopia,
+                carefully designed to showcase the very best of the region. From
+                stunning landscapes to rich cultural sites, our tours ensure a
+                comprehensive exploration of Ethiopia's unique attractions.
+                Enjoy a seamless journey filled with breathtaking experiences
+                and top-notch service, tailored to create lasting memories. Join
+                us to discover the beauty and heritage of Ethiopia through our
+                meticulously planned itineraries.
               </p>
               <button className="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold">
                 View Packages
@@ -162,7 +174,7 @@ export default function LandingPage() {
             </div>
             <div className="md:w-1/2">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src='/src/assets/About.png'
                 alt="Europe sightseeing"
                 width={400}
                 height={400}
@@ -173,46 +185,47 @@ export default function LandingPage() {
         </section>
 
         <section className="py-12">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Our International Packages
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: "Barcelona", price: "$840" },
-              { name: "Switzerland", price: "$840" },
-              { name: "Rio de Janeiro", price: "$840" },
-              { name: "Tomorrow land", price: "$840" },
-              { name: "Los Angeles", price: "$840" },
-              { name: "Barcelona", price: "$840" },
-              { name: "Barcelona", price: "$840" },
-              { name: "Maldives", price: "$840" },
-              { name: "Barcelona", price: "$840" },
-            ].map((destination, index) => (
-              <div
-                key={index}
-                className="relative group overflow-hidden rounded-lg"
-              >
-                <img
-                  src="/src/assets/About.png"
-                  alt={destination.name}
-                  width={400}
-                  height={300}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-end p-4">
-                  <div>
-                    <h3 className="text-white text-xl font-semibold">
-                      {destination.name}
-                    </h3>
-                    <p className="text-orange-500 font-bold">
-                      {destination.price}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+  <h2 className="text-3xl font-bold mb-8 text-center">
+    Explore Ethiopia with Our Packages
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {[
+      { name: "Addis Ababa", price: "$650", image: "/src/assets/Addis_Ababa.jpeg" },
+      { name: "Lalibela", price: "$720", image: "/src/assets/lalibela.jpeg" },
+      { name: "Gondar", price: "$680", image: "/src/assets/gonder.jpeg" },
+      { name: "Simien Mountains", price: "$820", image: "/src/assets/simien_mountain.jpeg" },
+      { name: "Axum", price: "$750", image: "/src/assets/axum.jpeg" },
+      { name: "Harar", price: "$690", image: "/src/assets/harar.jpeg" },
+      { name: "Lake Tana", price: "$770", image: "/src/assets/lake_tana.jpeg" },
+      { name: "Bale Mountains", price: "$850", image: "/src/assets/bale_mountain.jpeg" },
+      { name: "Omo Valley", price: "$900", image: "/src/assets/omo_vally.jpeg" },
+    ].map((destination, index) => (
+      <div
+        key={index}
+        className="relative group overflow-hidden rounded-lg"
+      >
+        <img
+          src={destination.image}
+          alt={destination.name}
+          width={400}
+          height={300}
+          className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-end p-4">
+          <div>
+            <h3 className="text-white text-xl font-semibold">
+              {destination.name}
+            </h3>
+            <p className="text-orange-500 font-bold">
+              {destination.price}
+            </p>
           </div>
-        </section>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
       </main>
     </div>
   );
