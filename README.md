@@ -1,4 +1,6 @@
-# Project Visti Ethiopia
+![image](https://github.com/user-attachments/assets/37181f95-0d5d-4447-8f2b-85c541ad144e)
+
+# Project Visit Ethiopia
 
 ## Overview
 Project Ethiopia is a responsive web application designed to promote tourism in Ethiopia by providing users with a streamlined process for booking trips and staying updated with the latest travel news and offers. This project showcases a variety of destinations within Ethiopia, allowing users to book their next adventure in just a few easy steps.
